@@ -16,6 +16,7 @@ public class SecondQuestion {
     boolean number;
     boolean upperCase;
     boolean lowerCase;
+    boolean especialChar;
 
     public SecondQuestion (String password){
         this.password = password;
@@ -23,6 +24,7 @@ public class SecondQuestion {
         this.number = validationIfContainsNumber(this.password);
         this.upperCase = validationIfContainsUpperCase((this.password));
         this.lowerCase = validationIfContainsLowerCase((this.password));
+        this.especialChar = validationIfCotainsEspecialChar((this.password));
 
 
 
@@ -80,6 +82,20 @@ public class SecondQuestion {
             if(passwordLowerCase.toLowerCase().charAt(i) == passwordLowerCase.charAt(i)){
                 return true;
             }
+        }
+        return false;
+    }
+
+    public boolean validationIfCotainsEspecialChar(String password){
+
+        String passwordEspecialChar = "!@#$%^&*()-+";
+
+        for( int i = 0; i < password.length(); i++){
+            for(int j = 0; j < passwordEspecialChar.length(); j++) {
+               if (passwordEspecialChar.charAt(j) == password.charAt(i)) {
+                   return true;
+               }
+           }
         }
         return false;
     }
