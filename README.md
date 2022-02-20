@@ -32,3 +32,7 @@ Construa um algoritmo que informe qual é o número mínimo de caracteres que de
 Abrir o pacote src\com\capgemini\firstQuestion e executar o arquivo .class "FirstQuestionMain";
 Esta classe é responsável por executar a classe de teste unitário deste desafio.
 
+- Questão 2:
+Abrir o pacote src\com\capgemini\secondQuestion e executar o arquivo .class "SecondQuestionMain";
+Esta classe é responsável por executar a classe de teste que exibe os dados exigidos no desafio.
+
