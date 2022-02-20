@@ -1,8 +1,13 @@
 package com.capgemini.thirdQuestion;
 
-import java.sql.Array;
 import java.util.ArrayList;
 import java.util.Arrays;
+
+/**
+ * @author Diego Rodrigues
+ * @version 1.0.0
+ * @see TestThirdQuestion
+ * **/
 
 public class ThirdQuestion {
 
@@ -14,22 +19,23 @@ public class ThirdQuestion {
         this.word = word;
     }
 
-    public int anagrama(){
+    //method to count how many anagrams have in the word
+    public int countAnagrams(){
         String text = this.word;
         int count = 0;
+
+
         ArrayList<String> substrings = new ArrayList<String>();
+
+        //double loop for separate the substrings
         for(int i = 0; i <= text.length(); i++) {
 
             for(int j = i+1; j <= text.length(); j++) {
-
                 substrings.add(text.substring(i, j));
-
             }
         }
-        System.out.println(substrings);
 
-
-
+        //double loop for comparing the two substrings
         for(int i =0; i <= substrings.size(); i++){
             for(int j = i + 1; j < substrings.size(); j++){
                 String a = substrings.get(i);
@@ -41,11 +47,11 @@ public class ThirdQuestion {
             }
         }
 
-
-
         return count;
     }
 
+
+    //method that to comparator if two strings are anagram
     public boolean isAnagrama(String s1, String s2){
 
         char[] tempString1 = s1.toCharArray();
@@ -59,38 +65,6 @@ public class ThirdQuestion {
 
         return (s1.equals(s2));
 
-
     }
 
-//    public int anagrama(){
-//
-//        String text = this.word;
-//
-//        StringBuilder a = new StringBuilder();
-//
-//        for(int i = 0; i <= text.length(); i++) {
-//            for (int j = 0; j <= text.length(); j++) {
-//                a.append(text.charAt(i));
-//
-//            }
-//        }
-//        return 1;
-//    }
-
-//    public int anagrama(){
-//        String text = this.word;
-//        int x = 0;
-//
-//        for(int i = 0; i < text.length(); i++){
-//            x = x ^ text.charAt(i);
-//            System.out.println(x);
-//        }
-//
-//        for(int j = 0; j < text.length(); j++){
-//            x = x ^ text.charAt(j);
-//            System.out.println(x);
-//        }
-//
-//        return  (text.length()-1) - x;
-//    }
 }

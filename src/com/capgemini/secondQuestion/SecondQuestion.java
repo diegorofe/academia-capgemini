@@ -1,7 +1,5 @@
 package com.capgemini.secondQuestion;
 
-import com.capgemini.firstQuestion.TestFirstQuestion;
-
 import java.util.Random;
 
 /**

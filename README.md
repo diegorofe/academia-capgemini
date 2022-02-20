@@ -20,7 +20,6 @@ Construa um algoritmo que informe qual é o número mínimo de caracteres que de
 - Questão 03 </br>
 Duas palavras podem ser consideradas anagramas de si mesmas se as letras de uma palavra podem ser realocadas para formar a outra palavra. Dada uma string qualquer, desenvolva um algoritmo que encontre o número de pares de substrings que são anagramas.
 
-
 <hr>
 
 ## 👨‍💻Tecnologias utilizadas
@@ -37,9 +36,22 @@ Duas palavras podem ser consideradas anagramas de si mesmas se as letras de uma 
 - Questão 1:
 Abrir o pacote src\com\capgemini\firstQuestion e executar o arquivo .class "FirstQuestionMain";</br>
 Esta classe é responsável por executar a classe de teste unitário deste desafio.
-</br></br>
+
+<hr>
+
 - Questão 2:
 Abrir o pacote src\com\capgemini\secondQuestion e executar o arquivo .class "SecondQuestionMain";</br>
 Esta classe é responsável por executar a classe de teste que exibe os dados exigidos no desafio.
+
+<hr>
+
+- Questão 3:Abrir o pacote src\com\capgemini\thirdQuestion e executar o arquivo .class "ThirdQuestionMain";</br>
+Esta classe é responsável por executar a classe TestThirdQuestion a qual vai testar os métodos da classe ThirdQuestion, onde:
+</br></br>
+-> O método countAnagrams() é responsável por contar a quantidade de anagramas presentes na palavra(String), enviada como parâmetro para o construtor da classe ThirdQuestion, retornando um inteiro(int).
+</br></br>
+-> O método isAnagrama() compara 2(duas) Strings passadas como parâmetro do método. Este método é chamado durante a execução do countAnagrams().
+
+</br></br>
 
 
