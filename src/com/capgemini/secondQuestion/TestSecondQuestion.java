@@ -16,6 +16,27 @@ public class TestSecondQuestion {
 
         secondQuestion = new SecondQuestion(this.password);
         return secondQuestion.validationLength();
+
+    }
+
+    public String testSuggestionPassword(){
+
+        String result;
+
+        if(!secondQuestion.validationLength()){
+            secondQuestion = new SecondQuestion(this.password);
+            result = secondQuestion.passwordSuggestion();
+
+        }else{
+           result = "No suggestion";
+        }
+        return result;
+    }
+
+    public int testCountLengthPassword(){
+        secondQuestion = new SecondQuestion(this.password);
+        return secondQuestion.countPasswordLenght();
+
     }
 
     public boolean testPasswordNumber(){

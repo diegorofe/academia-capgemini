@@ -18,12 +18,7 @@ public class SecondQuestion {
     }
 
     public boolean validationLength() {
-            if(this.password.length() >= 6){
-                return true;
-            } else{
-                passwordSuggestion();
-                return false;
-            }
+        return this.password.length() >= 6;
 
 
     }
@@ -92,7 +87,16 @@ public class SecondQuestion {
         return false;
     }
 
-    public void passwordSuggestion() {
+    public int countPasswordLenght(){
+
+        if(this.password.length() >= 6){
+            return 0;
+        }else{
+            return (6-this.password.length());
+        }
+
+    }
+    public String passwordSuggestion() {
         //variables for method
         String suggestion;
         String numbers = "012346789";
@@ -116,17 +120,14 @@ public class SecondQuestion {
         //build string with missing characters
         suggestion = numberAdcional + upperCaseAdiconal + lowerCaseAdicional + especialCharAdicional;
 
-        // print of difference between passwords length
-        int gap = (6 - password.length());
-        System.out.println(password.length() +
-                " caracteres não são suficientes! Favor inserir mais " + gap + " caracteres." +
-                "\n---------------------------------------------------------------------");
+//        // print of difference between passwords length
+//        int gap = countPasswordLenght();
+//        System.out.println(this.password.length() +
+//                " caracteres não são suficientes! Favor inserir mais " + gap + " caracteres." +
+//                "\n---------------------------------------------------------------------");
 
         //fusion of password suggested with origin password
         suggestion =  this.password + suggestion;
-
-
-
 
         //verify if string length is true again
         if(suggestion.length() < 6){
@@ -143,7 +144,7 @@ public class SecondQuestion {
             }
         }
 
-            System.out.println("-> Sugestão de senha: " + suggestion +"\n");
+            return suggestion;
 
     }
 }
