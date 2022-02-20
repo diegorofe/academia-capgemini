@@ -9,6 +9,7 @@ public class ThirdQuestionMain {
 
         System.out.println("Palavra digitada: " + testThirdQuestion.anagrama);
         System.out.println("Quantidade de anagramas: " + testThirdQuestion.testIfAnagrama());
+       // System.out.println("é anagrama? " + testThirdQuestion.testComparatorAnagram());
 
     }
 
