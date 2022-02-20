@@ -9,13 +9,15 @@ package com.capgemini.secondQuestion;
 public class SecondQuestionMain {
 
     public static void main(String[] args) {
-        SecondQuestion secondQuestion = new SecondQuestion("2TREEe");
+        TestSecondQuestion testSecondQuestion = new TestSecondQuestion();
+        System.out.println("Senha de teste: " + testSecondQuestion.password);
 
-        //System.out.println(secondQuestion.length);
-        //System.out.println(secondQuestion.number);
-        //System.out.println(secondQuestion.upperCase);
-        //System.out.println(secondQuestion.lowerCase);
-        //System.out.println(secondQuestion.especialChar);
+        System.out.println("Possui no mínimo 6 caracteres? " + testSecondQuestion.testPasswordLength());
+        System.out.println("Contém no mínimo 1 digito? " + testSecondQuestion.testPasswordNumber());
+        System.out.println("Contém no mínimo 1 letra em minúsculo? " + testSecondQuestion.testPasswordLowerCase());
+        System.out.println("Contém no mínimo 1 letra em maiúsculo? " + testSecondQuestion.testPasswordUppeerCase());
+        System.out.println("Contém no mínimo 1 caractere especial? " + testSecondQuestion.testPasswordEspecialChar());
+
 
     }
 }
