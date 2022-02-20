@@ -41,7 +41,23 @@ Esta classe é responsável por executar a classe de teste unitário deste desaf
 
 - Questão 2:
 Abrir o pacote src\com\capgemini\secondQuestion e executar o arquivo .class "SecondQuestionMain";</br>
-Esta classe é responsável por executar a classe de teste que exibe os dados exigidos no desafio.
+Esta classe é responsável por executar a classe TestSecondQuesti a qual testa os métodos da classe SecondQuestion, onde:
+
+</br></br>
+-> O método validationLength() é responsável por validar o tamanho do password que enviado como parâmetro para o construtor da classe SecondQuestion, retornando um boolean.
+</br></br>
+-> O método validationIfContainsNumber() é responsável por validar se existe ao menos 1(um) número no password que é enviado como parâmetro para o construtor da classe SecondQuestion, retornando um boolean.
+</br></br>
+-> O método validationIfContainsUpperCase() é responsável por validar se existe ao menos 1(uma) letra maiúscula no password que é enviado como parâmetro para o construtor da classe SecondQuestion, retornando um boolean.
+</br></br>
+-> O método validationIfContainsLowerCase() é responsável por validar se existe ao menos 1(uma) letra minúscula no password que é enviado como parâmetro para o construtor da classe SecondQuestion, retornando um boolean.
+</br></br>
+-> O método validationIfCotainsEspecialChar() é responsável por validar se existe ao menos 1(um) caracter especial no password que é enviado como parâmetro para o construtor da classe SecondQuestion, retornando um boolean.
+</br></br>
+-> O método countPasswordLengthMissing() é responsável por retornar a quantidade de caracteres ausentes no password que é enviado como parâmetro para o construtor da classe SecondQuestion, retornando um inteiro.
+</br></br>
+-> O método passwordSuggestion() é responsável por retornar uma sugestão de senha, caso exista, tomando como base os caracteres iniciais do password que é enviado como parâmetro para o construtor da classe SecondQuestion, retornando uma String.
+
 
 <hr>
 

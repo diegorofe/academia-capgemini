@@ -33,6 +33,7 @@ public class SecondQuestion {
         return false;
     }
 
+    //method created for remove numbers and return so letters of the password
     public String removeNumbers(String password) {
 
         String passwordWithoutNumbers = "";
@@ -87,7 +88,7 @@ public class SecondQuestion {
         return false;
     }
 
-    public int countPasswordLenght(){
+    public int countPasswordLengthMissing(){
 
         if(this.password.length() >= 6){
             return 0;
@@ -96,6 +97,7 @@ public class SecondQuestion {
         }
 
     }
+
     public String passwordSuggestion() {
         //variables for method
         String suggestion;
@@ -119,12 +121,6 @@ public class SecondQuestion {
 
         //build string with missing characters
         suggestion = numberAdcional + upperCaseAdiconal + lowerCaseAdicional + especialCharAdicional;
-
-//        // print of difference between passwords length
-//        int gap = countPasswordLenght();
-//        System.out.println(this.password.length() +
-//                " caracteres não são suficientes! Favor inserir mais " + gap + " caracteres." +
-//                "\n---------------------------------------------------------------------");
 
         //fusion of password suggested with origin password
         suggestion =  this.password + suggestion;

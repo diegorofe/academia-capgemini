@@ -35,7 +35,7 @@ public class TestSecondQuestion {
 
     public int testCountLengthPassword(){
         secondQuestion = new SecondQuestion(this.password);
-        return secondQuestion.countPasswordLenght();
+        return secondQuestion.countPasswordLengthMissing();
 
     }
 
